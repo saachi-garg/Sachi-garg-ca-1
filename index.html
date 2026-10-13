@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyChat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <h2 class="logo">MyChat</h2>
+      <button class="icon-btn" id="toggleBtn" title="Close sidebar">&#9776;</button>
+    </div>
+
+    <button class="side-item" id="newChatBtn">✏️ New chat</button>
+    <button class="side-item">🖼️ Images</button>
+    <button class="side-item">📚 Library</button>
+    <button class="side-item">🔍 Explore</button>
+
+    <p class="side-label">Recents</p>
+    <div id="history">
+      <button class="side-item small">Food Scramble Words</button>
+      <button class="side-item small">Cultural Diversity Presentation</button>
+    </div>
+
+    <div class="profile">
+      <div class="avatar">S</div>
+      <div>
+        <strong>Saachi Garg</strong><br />
+        <span class="muted">Free</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main area -->
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn" id="openBtn" title="Open sidebar">&#9776;</button>
+      <span class="model">MyChat ▾</span>
+    </header>
+
+    <!-- Welcome screen -->
+    <section class="welcome" id="welcome">
+      <h1>What can I help with?</h1>
+      <div class="suggestions">
+        <button class="chip">Explain photosynthesis</button>
+        <button class="chip">Tell me a joke</button>
+        <button class="chip">Give me a study tip</button>
+        <button class="chip">Say hello</button>
+      </div>
+    </section>
+
+    <!-- Chat messages -->
+    <section class="chat" id="chat"></section>
+
+    <!-- Input -->
+    <form class="input-bar" id="chatForm">
+      <button type="button" class="plus" title="Attach">+</button>
+      <input type="text" id="userInput" placeholder="Ask anything" autocomplete="off" />
+      <button type="submit" class="send" id="sendBtn" title="Send">➤</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
